@@ -1,0 +1,1830 @@
+body
+{
+    margin : auto;
+    width : 1000px;
+    background-image: url("../Images accueil/fond.png");
+    background-size : 100%;
+} 
+ 
+header
+{
+    height : 200px;
+}
+
+#entete
+{
+    text-decoration: none;
+}
+ 
+header #titre_ideevent
+{
+	margin-left: 100px;
+    display : inline-block;
+    height : 190px;
+    width : 600px;
+    vertical-align : middle;
+    margin-top : 4px;
+    text-decoration: none;
+}
+ 
+header #logo_titre
+{
+    width : 650px;
+    height : 360px;
+    text-decoration: none;
+}
+ 
+header #widget
+{
+    float: right;
+    height : 180px;
+    margin-top : 5px;
+    width : 180px;
+    display : inline-block;
+    vertical-align : middle;
+    text-align : center;
+    padding : 5px;
+    border-width:3px;	
+    border-style:solid;
+    border-color: rgb(200, 200, 200);
+    border-radius: 3px;
+}
+ 
+header #widget #bouton a
+{
+    display : inline-block  ;
+    width : 80px;
+    text-align : center;
+    text-decoration : none;
+    font-family : helvetica;
+    margin-top : 10px;
+    background-color: rgb(30, 80, 140);
+    color: white;
+    margin-left : 1px;
+    margin-right : 1px
+}
+ 
+ 
+header #widget #connexion p
+{
+    margin : 4px 4px;
+    font-family : helvetica
+}
+ 
+header #widget #connexion input
+{
+    height: 25px;
+    margin-top : 4px;
+}
+ 
+header #widget #connexion a
+{
+    font-size : 75%;
+    font-family : helvetica;
+    text-decoration : none;
+    color : black
+}
+ 
+header #widget #connected #bienvenue img
+{
+    float : left;
+    width : 40px;
+    height : 40px;
+}
+ 
+header #widget #connected #bienvenue
+{
+    padding : 20px
+}
+ 
+header #widget #connected a
+{
+    font-size : 70%;
+    font-family : helvetica;
+    text-decoration : none;
+    color : black
+}
+ 
+ 
+ 
+ 
+ 
+ 
+/*Fin header*/
+ 
+#deroulant, deroulant ul
+{
+	padding: 0px;
+	margin-bottom: 10px;
+	list-style:none;
+	text-align:center;
+}
+ 
+#deroulant li
+{
+	display:inline-block;
+	position:relative;
+	height: 43px;
+	width: 136px;
+	background-color: rgb(30, 80, 140); 
+	border-radius: 0px;
+	margin-bottom:0px;
+	transition: background-color .7s;
+ 
+}
+ 
+#deroulant ul li
+{
+	display:inherit;
+	border-radius:0;
+}
+ 
+#deroulant ul
+{
+	position:absolute;
+	z-index: 1000;
+	max-height:0;
+	top: 43px;
+	left: 0;
+	right: 0;
+	overflow:hidden;
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-align: center;
+}
+ 
+#deroulant li:hover ul
+{
+	max-height:25em;
+}
+ 
+/* background des liens sous menus */
+ 
+#deroulant li  li
+{
+	background-color: rgb(30, 80, 140);
+}
+ 
+/* background des liens menus et sous menus au survol */
+ 
+#deroulant li:hover, #deroulant li li:hover
+{
+	background-color: rgb(45, 120, 210);
+	transition: background-color 0.5s;
+	border-top-radius: 10px;
+}
+ 
+/* les a href */
+ 
+#deroulant a
+{
+	text-decoration: none;
+	display:block;
+	padding:8px;
+	color:#fff;
+	font-family: arial;
+}
+ 
+#deroulant ul a
+{
+	padding: 2px;
+}
+ 
+#deroulant li:hover li a
+{
+	color:white;
+	text-transform:inherit;
+}
+ 
+#deroulant li:hover a, #deroulant li li:hover a
+{
+}
+ 
+/*Fin nav */
+ 
+/*Recherche */
+     
+/* Fond du gadget de la barre de recherche */
+ 
+#div rech
+{
+	margin-bottom: 10px;
+    display: block;
+    top: 5px;
+    left: 20px;
+}
+ 
+.recherche_p {
+  background-color: #eeeeee;   /* Couleur de fond */
+  border-style: solid;   /* Style de la bordure  */
+  border-width: 1px;   /* Epaisseur de la bordure  */
+  border-color: #dddddd;   /* Couleur de la bordure  */
+  padding: 10px 10px 10px 10px;   /* Espace entre les bords et le contenu : haut droite bas gauche  */
+}
+ 
+/* Champ de saisie */
+#searchthis #query {
+  background-color: #ffffff;   /* Couleur de fond */
+  border-style: solid;   /* Style de la bordure  */
+  border-width: 1px;   /* Epaisseur de la bordure  */
+  border-color: #dddddd;   /* Couleur de la bordure  */
+  padding: 5px 10px 5px 10px;   /* Espace entre les bords et le contenu : haut droite bas gauche  */
+  width: 88%;   /* Permet d'ajuster la largeur du champ de saisie à 100% */
+  height: 40px;
+  box-sizing: border-box;   /* Important */
+  font-family: Lato;   /* Police du texte */
+  font-size: 18px;   /* Taille de la police du texte */
+  font-weight: normal;   /* Graisse du texte : normal = normal ; bold = gras */
+  letter-spacing: 1px;   /* Espacement des caractères */
+  text-align: center;
+}
+ 
+/* Bouton valider */
+#searchthis #search-btn {
+    background-color: #0080ff;   /* Couleur de fond */
+    border-style: solid;   /* Style de la bordure  */
+    border-width: 1px;   /* Epaisseur de la bordure  */
+    border-color: #0080ff;   /* Couleur de la bordure  */
+    padding: 5px 10px 5px 10px;   /* Espace entre les bords et le contenu : haut droite bas gauche  */
+    width: 98.5%;   /* Permet d'ajuster la largeur du champ de saisie à 100% */
+    box-sizing: border-box;   /* Important */
+    font-family: PT sans;   /* Police du texte */
+    font-size: 13px;   /* Taille de la police du texte */
+    font-weight: normal;   /* Graisse du texte : normal = normal ; bold = gras */
+    letter-spacing: 2px;   /* Espacement des caractères */
+    margin: 10px 0 0 0;   /* Espace autour du bouton : haut droite bas gauche  */
+    text-transform: uppercase;   /* Transforme le texte en majuscules */
+    color: #ffffff;   /* Couleur du texte */
+}
+ 
+/* Bouton valider quand survolé par la souris */
+#searchthis #search-btn:hover {
+  background-color: #ffffff;   /* Couleur de fond */
+  color: #000000;   /* Couleur du texte */
+  cursor: pointer;   /* Apparence du curseur comme pour un lien */
+}
+ 
+/*resultats recherche */
+ 
+#evenementrech
+{
+    padding : 10px;
+    background-color : white;
+    text-decoration : none;
+    text-align: center;
+}
+ 
+#titrerech
+{
+    display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    font-size : 200%;
+    font-family : helvetica;
+    color: black;
+    text-decoration: none;
+    float: center;
+    text-shadow: 0px 0px 9px #CCC;
+}
+ 
+#dateheurerech
+{
+    text-align : right;
+    margin-bottom : 0px;
+    font-family : helvetica;
+}
+ 
+#descriptionrech img
+{
+    width : 200px;
+    height : 200px;
+    float : left;
+    margin-right : 20px;
+}
+ 
+#descriptionrech
+{
+    height : 200px;
+    display : inline-block;
+    overflow : hidden;
+    text-overflow : ellipsis;
+    padding : 20px;
+    margin : 0px;
+    font-family : helvetica;
+    text-decoration: none;
+}
+ 
+ 
+#evenementrech:hover
+{
+    background-color : rgb(220,220,220);
+}
+ 
+/*footer*/
+ 
+footer
+{
+    height : auto;
+    background-color : rgb(4, 8, 31);
+    border : 2px solid black;
+    padding : 10px 55px
+}
+ 
+#mention a
+{
+        margin : 18px;
+        text-decoration : none;
+        color : darkgrey;
+        font-family : helvetica
+}
+ 
+#reseaux_sociaux
+{
+        display : inline-block;
+        width : 440px;
+        text-align : center;
+}
+ 
+#nous
+{
+        display : inline-block;
+        width : 440px;
+        text-align : center;
+}
+ 
+#reseaux_sociaux img
+{
+        height : 100px;
+        display : inline-block;
+}
+ 
+#nous img
+{
+        height : 100px;
+}
+ 
+footer p
+{
+        color : darkgrey;
+        font-family : helvetica;
+        font-size : 90%
+}
+ 
+footer img:hover
+{
+    opacity : 0.6
+}
+ 
+/* fin footer*/
+ 
+ 
+ 
+/* CATEGORIE */
+ 
+#categorie
+{
+    padding : 50px
+}
+  
+#categorie a
+{
+    display : inline-block;
+    width : 400px;
+    height : 400px;
+    margin : 20px;
+    text-shadow: 0px 0px 9px #777;
+}
+  
+#categorie a:hover
+{
+    opacity : 0.8
+}
+  
+#categorie div
+{
+    display : inline-block;
+    width : 100%;
+    height : 100%;
+    background-size : 100%;
+}
+  
+#categorie #cat_sport
+{
+    background-image : url("../Images accueil/cat_sport.jpg")
+}
+  
+#categorie #cat_culture
+{
+    background-image : url("../Images accueil/cat_culture.jpg") 
+}
+  
+#categorie #cat_concert
+{
+    background-image : url("../Images accueil/cat_concert.jpg") 
+}
+  
+#categorie #cat_nature
+{
+    background-image : url("../Images accueil/cat_nature.jpg") 
+}
+  
+#categorie #cat_social
+{
+    background-image : url("../Images accueil/cat_social.jpg") 
+}
+  
+#categorie #cat_soiree
+{
+    background-image : url("../Images accueil/cat_soiree.jpg") 
+}
+  
+#categorie #cat_ceremonie
+{
+    background-image : url("../Images accueil/cat_ceremonie.jpg") 
+}
+  
+#categorie p
+{
+    text-align : center;
+    font-family : helvetica;
+    font-size : 250%;
+    color : white;
+    font-weight : bold
+}
+  
+/*Fin Catégorie*/
+  
+#event_cre,#membre_cre
+{   
+    width: 600px;
+    margin: auto;
+    font-family : helvetica, "Times New Roman", Times, serif;
+    background: rgb(230,243,243);
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom : 20px
+}
+  
+#event_cre label,#membre_cre label
+{
+    display: block;
+}
+  
+#event_cre input[type="text"],#event_cre input[type="url"],#membre_cre input[type="text"],#membre_cre input[type="url"]
+{
+    width : 200px
+}
+  
+#event_cre fieldset,#membre_cre fieldset
+{
+    padding : 50px
+}
+  
+#event_cre p label,#membre_cre p label
+{
+    display : inline-block;
+    font-size : 80%
+}
+  
+#event_cre p input,#membre_cre p input
+{
+    margin-right : 75px;
+    display : inline-block
+}
+  
+#event_cre legend,#membre_cre legend
+{
+    font-weight : bold
+}
+  
+#event_cre div,#membre_cre div
+{
+    text-align : center;
+    font-size : 140%;
+    font-weight : bold
+}
+  
+#membre_cre input[type="radio"],#membre_cre label[for="masculin"],#membre_cre label[for="feminin"]
+{
+    display : inline-block
+}
+/* Fin formulaire d'évènement et d'inscription */
+ 
+#accueil #evenement
+{
+    padding : 10px;
+    background-color : white;
+    text-decoration : none;
+    text-align: center;
+}
+ 
+#accueil #titre
+{
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    font-size : 200%;
+    font-family : helvetica;
+    color: black;
+    text-decoration: none;
+    float: center;
+    text-shadow: 0px 0px 9px #CCC;
+}
+
+#posnote
+{
+	display: inline-block;
+	float:right;
+}
+
+.pos0
+{
+	height: 46px;
+	width: 150px;
+	background-image: url("../Images/note5.png");
+	background-size: 300px 235px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pos1
+{
+	height: 46px;
+	width: 150px;
+	background-image: url("../Images/note5.png");
+	background-size: 300px 235px;
+	background-position: -151px 0px;
+	background-repeat: no-repeat;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pos2
+{
+	height: 46px;
+	width: 150px;
+	background-image: url("../Images/note5.png");
+	background-size: 300px 235px;
+	background-position: -151px -47px;
+	background-repeat: no-repeat;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pos3
+{
+	height: 46px;
+	width: 150px;
+	background-image: url("../Images/note5.png");
+	background-size: 300px 235px;
+	background-position: -151px -94px;
+	background-repeat: no-repeat;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pos4
+{
+	height: 46px;
+	width: 150px;
+	background-image: url("../Images/note5.png");
+	background-size: 300px 235px;
+	background-position: -151px -141px;
+	background-repeat: no-repeat;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pos5
+{
+	height: 46px;
+	width: 150px;
+	background-image: url("../Images/note5.png");
+	background-size: 300px 235px;
+	background-position: -151px -188px;
+	background-repeat: no-repeat;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pos1_5
+{
+	height: 46px;
+	width: 150px;
+	background-image: url("../Images/note5.png");
+	background-size: 300px 235px;
+	background-position: 0px -47px;
+	background-repeat: no-repeat;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pos2_5
+{
+	height: 46px;
+	width: 150px;
+	background-image: url("../Images/note5.png");
+	background-size: 300px 235px;
+	background-position: 0px -94px;
+	background-repeat: no-repeat;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pos3_5
+{
+	height: 46px;
+	width: 150px;
+	background-image: url("../Images/note5.png");
+	background-size: 300px 235px;
+	background-position: 0px -141px;
+	background-repeat: no-repeat;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.pos4_5
+{
+	height: 46px;
+	width: 150px;
+	background-image: url("../Images/note5.png");
+	background-size: 300px 235px; /*on redimensionne l'image */
+	background-position: 0px -188px;
+	background-repeat: no-repeat;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* code css à utiliser avec la formule de positionnement de l'image en fonction de la variable $donnee[moyenne]
+{
+	height: 46px;
+	width: 150px;
+	background-image: url("../Images/note5.png");
+	background-position: 0px 0px;
+	voir feuille formules
+	margin-left: 20px;
+	margin-top: 10px;
+} */
+
+#accueil #dateheure
+{
+    text-align : right;
+    margin-bottom : 0px;
+    font-family : helvetica;
+    color: black;
+    text-decoration : none;
+}
+ 
+#accueil img
+{
+    width : 200px;
+    height : 200px;
+    float : left;
+    margin-right : 20px;
+}
+ 
+#accueil #description
+{
+    height : 200px;
+    display : inline-block;
+    overflow : hidden;
+    text-overflow : ellipsis;
+    margin : 0px;
+    font-family : helvetica;
+    color: black;
+    text-decoration: none;
+}
+ 
+#pagination
+{
+    text-align : center
+}
+ 
+#pagination a
+{
+    display : inline-block;
+    background-color : rgb(30, 80, 140);
+    color : white;
+    text-decoration : none;
+    width : 70px;
+    height : 30px;
+    font-family : helvetica;
+    font-stretch : ultra-condensed;
+    font-weight : 550;
+    padding-top : 7px;
+}
+ 
+#pagination a:hover
+{
+    background-color : (45, 120, 210);
+}
+ 
+#accueil #evenement:hover
+{
+    background-color : rgb(220, 220, 220);
+    transition: 0.3s;
+}
+/* Fin accueil */
+ 
+#note #evenement, #participant #evenement
+{
+    padding : 10px;
+    background-color: white;
+    text-decoration : none;
+    text-align: center;
+}
+ 
+#note #titre, #participant #titre
+{
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    font-size : 200%;
+    font-family : helvetica;
+    color: black;
+    text-decoration: none;
+    float: center;
+    text-shadow: 0px 0px 9px #CCC;
+}
+
+ 
+#note #dateheure, #participant #dateheure
+{
+    text-align : right;
+    color: black;
+    text-decoration: none;
+    margin-bottom : 0px;
+    font-family : helvetica;
+}
+ 
+#note img, #participant img
+{
+    width : 200px;
+    height : 200px;
+    float : left;
+    margin-right : 20px;
+}
+ 
+#note #description, #participant #description
+{
+    display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    font-family : helvetica;
+    color: black;
+    text-decoration: none;
+    float: center;
+    text-shadow: 0px 0px 9px #CCC;
+}
+}
+ 
+#pagination
+{
+    text-align : center
+}
+ 
+#note #evenement:hover, #participant #evenement:hover
+{
+    background-color : rgb(220,220,220);
+    transition: 0.3s;
+}
+ 
+section
+{
+    min-height : 1200px
+}
+ 
+/* Fin note/participant */
+#develop #titre_event
+{
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    font-size : 200%;
+    font-family : helvetica;
+    color: black;
+    text-decoration: none;
+    float: center;
+    text-shadow: 0px 0px 9px #CCC;
+}
+
+ 
+#develop div
+{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family : helvetica;
+    color: black
+    text-decoration: none;
+    float: center;
+    text-shadow: 0px 0px 9px #CCC;
+}
+
+
+#develop #description_event u
+{
+    font-style: italic;
+    font-size: 120%;
+    text-decoration: none;
+}
+ 
+#develop #info_event
+{
+    padding: 10px;
+    margin: auto;
+    font-family : helvetica;
+    text-decoration: none;
+}
+
+#develop #info_event u
+{
+    margin: auto;
+    font-style: italic;
+    font-family : helvetica;
+    text-decoration: none;
+}
+ 
+#develop #annexe_event
+{
+    margin: auto;
+    padding : 10px;
+    width: 900px;
+    font-family : helvetica
+}
+
+#psn_event
+{
+    width: 570px;
+}
+ 
+#participer, #suivre
+{
+    display : inline-block;
+    height : 50px;
+    width : 160px;
+    margin-left : 10px;
+    margin-right : 10px;
+    text-decoration : none;
+    text-align : center;
+    color : white;
+    padding-top : 25px;
+    font-family : helvetica;
+    font-stretch : ultra-condensed;
+    font-weight : 600;
+    font-size : 110%
+}
+ 
+#psn_event #participer
+{
+    background-color : #BFD500;
+}
+ 
+#psn_event #suivre
+{
+    background-color : #FF9101
+}
+ 
+#psn_event #noter
+{
+    background-color : yellow
+}
+ 
+#psn_event #participer:hover
+{
+    opacity : 0.7
+}
+ 
+#psn_event #suivre:hover
+{
+    opacity : 0.7
+}
+ 
+#psn_event #noter:hover
+{
+    opacity : 0.7
+}
+
+#signaler_event:hover
+{
+    opacity : 0.7
+}
+
+section .note_etoile
+
+{
+    height: 78px;
+    background-color: yellow;
+    margin: 0px;
+    float: right !important; /* inverse le sens de selection */
+    color: white !important;
+    text-shadow: 0px 0px 9px #666666;
+    text-decoration: none !important;
+    font-size: 3em !important;
+}
+
+section .note_etoile:hover,
+section .note_etoile:focus,
+section .note_etoile:hover ~ a,
+section .note_etoile:focus ~ a 
+{   
+   color: green !important;
+   transition: 0.2s
+}
+ 
+#develop #description_event img
+{
+    float: left;
+    width: 250px;
+    height: 250px;
+    margin-right: 20px;
+}
+
+#signaler_event
+{
+    background-color : grey;
+    display : inline-block;
+    height : 50px;
+    width : 160px;
+    margin-top: 20px;
+    margin-left : 10px;
+    margin-right : 10px;
+    text-decoration : none;
+    text-align : center;
+    color : white;
+    padding-top : 25px;
+    font-family : helvetica;
+    font-stretch : ultra-condensed;
+    font-weight : 600;
+    font-size : 110%
+}
+ 
+/* Fin Developpe */
+ 
+#cate #evenement
+{
+    margin : 30px;
+    padding : 20px;
+    background-color : #EDEDED;
+    color : black;
+    text-decoration : none
+}
+ 
+#cate #titre
+{
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+    font-size : 200%;
+    font-family : helvetica;
+    color: black;
+    text-decoration: none;
+    float: center;
+    text-shadow: 0px 0px 9px #CCC;
+}
+
+ 
+#cate #dateheure
+{
+    text-align : right;
+    margin-bottom : 0px;
+    font-family : helvetica;
+}
+ 
+#cate img
+{
+    width : 200px;
+    height : 200px;
+    float : left;
+    margin-right : 20px;
+}
+ 
+#cate #description
+{
+    height : 200px;
+    display : inline-block;
+    overflow : hidden;
+    text-overflow : ellipsis;
+    padding : 20px;
+    margin : 0px;
+    font-family : helvetica;
+    border-radius : 10px
+}
+ 
+#pagination
+{
+    text-align : center
+}
+ 
+#cate #evenement:hover
+{
+    background-color : rgb(220,220,220);
+    transition: 0.3s;
+}
+ 
+/* Fin cate */
+ 
+section #confirmationinscription
+{
+    text-align : center; 
+}   
+ 
+ 
+/* Fin dconfirmation */
+ 
+/* Début page conseil */
+ 
+.regle1
+{
+    width: 96%;
+    border-style: ridge;
+    border-color: #406090;
+    border-width: 9px;
+    border-radius: 0px;
+    text-align: center;
+    padding-top: 9px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+ 
+}
+ 
+.regle2
+{
+    width: 96%;
+    border-style: groove;
+    border-color: #AACCAA;
+    border-width: 9px;
+    border-radius: 0px;
+    text-align: center;
+    text-align: center;
+    padding-top: 9px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+ 
+}
+ 
+.conseil1
+{
+    text-align: center;
+    font-size: 145%;
+    color: #FFFFFF;
+    background: -webkit-gradient(linear, right bottom, left top, from(black), to(#0751B7));
+    background: -moz-gradient(linear, right bottom, left top, from(black), to(#0751B7));
+    background: -o-gradient(linear, right bottom, left top, from(black), to(#0751B7));
+    background: gradient(linear, right bottom, left top, from(black), to(#0751B7));
+ 
+}
+ 
+.conseil2
+{
+    text-align: center;
+    font-size: 145%;
+    color: #FFFFFF;
+    background: -webkit-gradient(linear, right bottom, left top, from(black), to(#90CFA0));
+    background: -moz-gradient(linear, right bottom, left top, from(black), to(#90CFA0));
+    background: -o-gradient(linear, right bottom, left top, from(black), to(#90CFA0));
+    background: gradient(linear, right bottom, left top, from(black), to(#90CFA0));
+ 
+}
+ 
+#intro_conseil
+{
+    text-align: justify;
+    display: block;
+    border: 10px groove;
+    width: 96%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    padding-left: 1%;
+    padding-right: 1%;
+ 
+}
+ 
+#titre_conseil
+{
+    text-align: center;
+    color: grey;
+    font-size: 290%;
+    font-weight: 500;
+    text-decoration: none;
+ 
+}
+ 
+#gif_conseil
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+/* Fin page conseil */
+ 
+/* Début page nous contactez */
+ 
+#nouscontacter
+{
+    margin-top : 50px;
+}
+ 
+.form-style-6{
+    font: 95% Arial, Helvetica, sans-serif;
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 16px;
+    background: #F7F7F7;
+}
+.form-style-6 h1{
+    background: #43D1AF;
+    padding: 20px 0;
+    font-size: 140%;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+    margin: -16px -16px 16px -16px;
+}
+.form-style-6 input[type="text"],
+.form-style-6 input[type="date"],
+.form-style-6 input[type="datetime"],
+.form-style-6 input[type="email"],
+.form-style-6 input[type="number"],
+.form-style-6 input[type="search"],
+.form-style-6 input[type="time"],
+.form-style-6 input[type="url"],
+.form-style-6 textarea,
+.form-style-6 select 
+{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+ 
+.form-style-6 input[type="text"]:focus,
+.form-style-6 input[type="date"]:focus,
+.form-style-6 input[type="datetime"]:focus,
+.form-style-6 input[type="email"]:focus,
+.form-style-6 input[type="number"]:focus,
+.form-style-6 input[type="search"]:focus,
+.form-style-6 input[type="time"]:focus,
+.form-style-6 input[type="url"]:focus,
+.form-style-6 textarea:focus,
+.form-style-6 select:focus
+{
+    box-shadow: 0 0 5px #43D1AF;
+    padding: 3%;
+    border: 1px solid #43D1AF;
+}
+ 
+.form-style-6 input[type="submit"],
+.form-style-6 input[type="button"]{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #43D1AF;
+    border-bottom: 2px solid #30C29E;
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;    
+    color: #fff;
+}
+ 
+.form-style-6 input[type="submit"]:hover,
+.form-style-6 input[type="button"]:hover{
+    background: #2EBC99;
+}
+ 
+/* Fin page nous contacter */
+ 
+#client_event 
+{
+    width : 940px;
+    margin : auto;
+    margin-top : 30px;
+    padding : 30px;
+    padding-top : 50px;
+    background-color : rgb(192,192,192)
+}
+ 
+#client_event p
+{
+    width : 800px;
+    margin : auto;
+    margin-bottom : 30px;
+    font-family : helvetica;
+    font-size : 100%;
+}
+ 
+#client_event #mesevenements
+{
+    font-size : 150%;
+    text-align : center;
+    font-weight : 600
+}
+ 
+#client_event a
+{
+    display : inline-block;
+    width : 250px; 
+    height : 50px;
+    color : white;
+    font-family : helvetica;
+    font-weight : 600;
+    font-stretch : ultra-condensed;
+    font-size : 110%;
+    text-decoration : none;
+    text-align : center;
+    padding-top : 25px;
+    margin-left : 10px;
+    margin-right : 10px
+}
+ 
+#client_event #participationclient
+{
+    background-color : #BFD500;
+    margin-left : 200px
+}
+ 
+#client_event #suiviclient
+{
+    background-color : #FF9101
+}
+ 
+#client_event #participationclient:hover
+{
+    opacity : 0.7
+}
+ 
+#client_event #suiviclient:hover
+{
+    opacity : 0.7
+}
+ 
+#modif
+{
+    width : 700px;
+    margin : auto;
+    margin-top : 30px;
+    padding : 30px;
+    padding-top : 30px;
+    background-color : rgb(192,192,192);
+    font-family : helvetica;
+    height : 700px;
+    font-weight : 500;
+    padding-left : 150px;
+    padding-right : 150px
+}
+ 
+#modif h5
+{
+    font-size : 150%;
+    text-align : center;
+    font-weight : 600
+}
+ 
+#modif form p
+{
+    font-weight : 600;
+}
+ 
+#modif button
+{
+    text-align : center;
+    height : 50px;
+    width : 100px;
+    margin : auto;
+    display : block;
+}
+ 
+#erreurauthentification
+{
+    text-align : center;
+    font-style : italic;
+    font-family : helvetica;
+    font-weight : 600;
+    font-stretch : ultra-condensed
+}
+ 
+#error
+{
+    text-align : center;
+    font-style : italic;
+    font-family : helvetica;
+    font-weight : 600;
+    font-stretch : ultra-condensed
+}
+ 
+#confirmationinscription
+{
+    text-align : center;
+    font-family : helvetica;
+    font-weight : 500;
+    font-stretch : ultra-condensed;
+    font-size : 150%
+}
+ 
+/*debutpage identification */
+ 
+#pageiden #identification
+{
+    background-color : #E6F3F3;
+    width : 400px;
+    display : inline-block;
+    text-align : center;
+    height : 280px;
+    vertical-align : top;
+    margin-left : 30px;
+    margin-right : 20px;
+}
+ 
+#pageiden #identification p
+{
+    font-weight : 700;
+    font-size : 150%;
+    font-family : helvetica;
+}
+ 
+#pageiden #identification input, #pageiden #identification button
+{
+    height : 25px;
+    width : 175px
+}
+ 
+#pageiden #identification form
+{
+    line-height : 2.5;
+}
+ 
+ 
+#pageiden #membre_cre
+{
+    display : inline-block;
+    width : 450px;
+    vertical-align : middle; 
+}
+ 
+#pageiden #identification button, #pageiden #membre_cre button
+{
+    background-color : #78AB4E;
+    height : 50px;
+    width : 125px
+}
+ 
+ 
+ 
+#pageiden #identification a
+{
+    color : black;
+    text-decoration : none;
+    font-family : helvetica;
+    font-stretch : ultra-condensed;
+}
+ 
+#pageiden #identification a:hover
+{
+    color : gray;
+}
+ 
+#pageiden
+{
+    padding-top : 40px;
+}
+ 
+/*debut recup*/
+ 
+#recupmdp
+{
+    margin : auto;
+    width : 650px;
+    background-color : rgb(192,192,192);
+    padding : 40px;
+    font-family : helvetica;
+    margin-top : 50px
+}
+ 
+#recupmdp form
+{
+    margin : 50px;
+    margin-left : 150px;
+}
+ 
+#recupmdp form input
+{
+    width : 200px
+}
+ 
+#recupmdp form button
+{
+    background-color : #78AB4E;
+    height : 50px;
+    width : 125px;
+    margin-left : 100px
+}
+ 
+#errorrecup
+{
+font-family : helvetica;
+font-style : italic;
+font-weight : bold;
+text-align : center
+}
+ 
+/* debut CGU*/
+ 
+#cgu
+{
+    background-color : #EDEDED;
+    margin : 50px;
+    padding : 50px;
+    color : #333;
+    font-family : helvetica;
+    height : 1050px
+}
+ 
+#cgu #maj
+{
+    color : #AFAFAF
+}
+ 
+#cgu h5
+{
+    font-size : 175%;
+    font-weight : 600
+}
+ 
+ 
+ 
+/* css du forum */
+
+#forum
+{
+    margin: 40px auto;
+    font-family: Helvetica ;
+    text-decoration: none;
+    background-color : #EDEDED;
+    min-height : 1100px
+}
+
+#forum td a
+{   
+    text-decoration : none !important;
+    color : black
+}
+
+#pitree
+{
+    display : inline-block;
+    width : 250px;
+    height : 33px;
+    color : white;
+    background-color : #6C7984;
+    text-decoration : none !important;
+    font-weight: bold;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
+    border : 1px solid #5D6871;
+    text-align : center;
+    padding-top : 12px;
+    margin : 30px auto 30px 100px
+}
+
+#pitree:hover
+{
+    background-color : #333
+}
+
+#bat
+{
+    width : auto;
+    margin : auto;
+    background-color : #EDEDED;
+    border : 1px solid #333;
+}
+
+#titreauteur, #titredate, #titresujet
+{
+    font-weight : bold;
+    font-size : 105%
+}
+
+#titreauteur,#auteur
+{
+height : 50px;
+width : 130px;
+padding-left : 30px;
+text-align : left
+}
+
+#titresujet,#sujet
+{
+height : 50px;
+width : 500px;
+text-align : left;
+padding-left : 30px;
+color : black
+}
+
+#titredate,#date
+{
+height : 50px;
+width : 150px;
+text-align : center
+}
+
+#bat #topics td
+{
+    border-top : 1px solid #333;
+}
+
+#bat #topics:hover
+{
+    background-color : #333;
+    color : white;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+#bat #futurtitreauteur, #bat #futurtitremessage
+{
+    font-weight : bold;
+    padding-left : 30px;
+}
+
+#bat #futurauteur, #bat #futurmessage
+{
+        padding-left : 30px;
+}
+
+#bat #futurauteur, #bat #futurtitreauteur
+{
+    width : 130px;
+    height : 50px
+}
+
+#bat #futurmessage, #bat #futurtitremessage
+{
+    width : 650px;
+    height : 50px
+}
+
+#cadre
+{
+    border: 1px solid black;
+}
+
+#forum fieldset
+{
+    border:2px solid 2D484C;
+    border-radius:8px;
+    border-radius:8px;  
+    border-radius:8px;
+    height : 400px;
+    width : 740px;
+    margin : auto;
+    padding-right : 50px
+}
+
+/*Debut admin */
+
+#admin a
+{
+	display : block;
+	width : 275px;
+	height : 45px;
+	font-family : helvetica;
+	text-decoration : none;
+	color : white ;
+	background-color : #6C7984;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
+	border: 1px solid #5D6871;
+	margin : auto;
+	text-align : center;
+	padding-top : 25px
+}
+
+#admin a:hover
+{
+	background-color : #333;
+}
+
+#admin p
+{
+	width : 750px;
+	font-family : helvetica;
+	margin : 30px auto;
+}
+
+#admin form
+{
+	font-family : helvetica;
+	margin : 100px auto;
+	width : 700px;
+	padding-left : 350px
+}
+
+#supprimer_event
+{
+    display: inline-block;
+    margin-left : 50px;
+    text-decoration : none;
+    font-family : helvetica;
+    color : red;
+    margin-bottom : 30px;
+}
+
+#pasadmin
+{
+    font-family:helvetica;
+    text-align: center;
+}
+
+/* Début page Aide-FAQ */
+
+.aide1
+{
+    width: 48%;
+    border: 5px ridge #406090;
+    border-width: 0.7em;
+    border-radius: 1em;
+    padding-top: 5px;
+    padding-right: 3px;
+    padding-left: 5px;
+    padding-bottom: 1px;
+    text-align: newspaper;
+    position: relative;
+    right: -50%;
+
+}
+
+
+.aide2
+{
+    width: 48%;
+    border: 5px ridge #AACCAA;
+    border-width: 0.7em;
+    border-radius: 1em;
+    padding-top: 5px;
+    padding-right: 3px;
+    padding-left: 5px;
+    padding-bottom: 1px;
+    text-align: newspaper;
+    position: relative;
+    left: 0%;
+
+}
+
+#FAQ
+{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 90%
+
+}
+
+.haut_titre
+{
+    text-align: center;
+    font-size: 290%;
+    font-weight: 500;
+    color: #0560BB;
+    text-decoration: underline overline;
+    padding-top: 5%
+
+}
+
+.titre1
+{
+    text-align: center;
+    font-size: 120%;
+    color: #FFFFFF;
+    background: -webkit-gradient(linear, right bottom, left top, from(black), to(#0751B7));
+    background: -moz-gradient(linear, right bottom, left top, from(black), to(#0751B7));
+    background: -o-gradient(linear, right bottom, left top, from(black), to(#0751B7));
+    background: gradient(linear, right bottom, left top, from(black), to(#0751B7));
+
+}
+
+.titre2
+{
+    text-align: center;
+    font-size: 120%;
+    color: #FFFFFF;
+    background: -webkit-gradient(linear, right bottom, left top, from(black), to(#AACCAA));
+    background: -moz-gradient(linear, right bottom, left top, from(black), to(#AACCAA));
+    background: -o-gradient(linear, right bottom, left top, from(black), to(#AACCAA));
+    background: gradient(linear, right bottom, left top, from(black), to(#AACCAA));
+
+}
+
+#aide_annexe
+{
+    text-align: center;
+    display: block;
+    border: 7px groove;
+    font-size: 110%;
+    width: 95%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    margin-bottom: 5%;
+
+}
+
+/* Fin page Aide-FAQ */
+
+/*recherche avancée */
+.champs
+{
+    height:30px;
+    width:300px;
+}
+
+#blocrech1
+{
+    display:inline-block;
+}
+
+#blocrech2
+{
+    display:inline-block;
+    vertical-align:top;
+    margin-top: -274px;
+    margin-left: 70px;
+}
+
+#rechav
+{
+    font-size: 110%;
+}
+
+#atextebutt
+{
+    text-decoration: none;
+}
+
+#atextebutt button
+{
+    display: inline-block;
+}
+
+#textebutt
+{
+    width: 300px;
+    height: 30px;
+    background-color: rgb(30,80,140);   /* Couleur de fond */
+    border-style: solid;   /* Style de la bordure  */
+    border-width: 1px;   /* Epaisseur de la bordure  */
+    border-color: rgb(30,80,140);   /* Couleur de la bordure  */
+    border-radius: 25px;
+    padding: 5px 10px 5px 10px;   /* Espace entre les bords et le contenu : haut droite bas gauche  */
+    box-sizing: border-box;   /* Important */
+    font-family: PT sans;   /* Police du texte */
+    font-size: 13px;   /* Taille de la police du texte */
+    letter-spacing: 2px;   /* Espacement des caractères */
+    margin: 10px 0 0 0;   /* Espace autour du bouton : haut droite bas gauche  */
+    text-transform: uppercase;   /* Transforme le texte en majuscules */
+    color: #ffffff;   /* Couleur du texte */
+    text-decoration: none;
+    text-align: center;
+}
+
+#textebutt:hover {
+  background-color: rgb(40,100,170);   /* Couleur de fond */
+  color: #ffffff;   /* Couleur du texte */
+  cursor: pointer;   /* Apparence du curseur comme pour un lien */
+}
